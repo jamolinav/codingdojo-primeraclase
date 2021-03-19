@@ -1,0 +1,248 @@
+body * {
+    outline: 1px dotted red;
+    width: 970px;
+}
+
+#body1 {
+    background: rgb(37 80 118);
+}
+
+#header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 110px;
+}
+
+#header img {
+    width: 350px;
+    height: 100px;
+    grid-column: 1 / 6;
+}
+
+#header_r {
+    display: inline-block;
+    grid-column: 9 / 13;
+    width: 100%;
+}
+
+#header_r_h {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 30px;
+}
+
+#header_r_h_p {
+    width: 100px;
+    text-align: right;
+    font-size: 12px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header_r_h a {
+    width: 100px;
+    width: max-content;
+    color: #ffdb38;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+}
+
+#header_r_h h5 {
+    width: 100px;
+    width: max-content;
+    color: black;
+    margin: 0px 3px;
+}
+
+
+#contenedor_search {
+    display: flex;
+    width: 200px;
+    padding: 10px 30px;
+    place-items: center;
+    background-color: rgb(68 68 68);
+    border-radius: 10px;
+    box-shadow: 5px 5px black;
+}
+
+#button-go {
+    width: 40px;
+    margin-left: 8px;
+    background-color: rgb(70 126 173);
+    color: white;
+
+}
+
+#contenedor_search input {
+    max-width: 130px;
+    height: 30px;
+    text-align: center;
+}
+
+#menu {
+    display: flex;
+    background-color: rgb(70 126 173);
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+    margin-top: 20px;
+    width: 800px;
+    border-radius: 5px;
+}
+
+#menu a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: system-ui;
+}
+
+#header_bottom {
+    display: flex;
+    width: 600px;
+    margin-left: 130px;
+}
+
+#header_bottom_menu2 {
+    width: 200px;
+    padding-top: 20px;
+}
+
+.menu2 {
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    height: 30px;
+    width: 100px;
+}
+
+.menu2_contenedor {
+    display: flex;
+    justify-content:center;
+    align-content:center;
+    width: 250px;
+    margin-left: 40px;
+}
+
+.menu2_contenedor p {
+    display: flex;
+    font-size: 10px;
+    justify-content:flex-end;
+    align-content:flex-end;
+    height: 30px;
+    width: 20px;
+    color: #ffdb38;
+    margin-right: 4px;
+    font-weight: bold;
+    font-variant: all-petite-caps;
+}
+
+.menu2_contenedor a {
+    font-size: 15px;
+    color: white;
+    align-self: center;
+    width: max-content;
+}
+
+#header_bottom_contenido {
+    width: 300px;
+}
+
+#header_bottom_contenido_p {
+    width: 600px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.better-than {
+    width: 600px;
+    text-align: center;
+    color:#f0cc36;
+    font-size: 18px;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#the-zen {
+    width: 600px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#body2 {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    padding-left: 110px;
+    width: 820px;
+    gap: 20px;
+}
+
+.body2-bloq {
+    width: 100%;
+    border-top: 4px solid rgb(70 126 173);
+    margin-top: 5px;
+    padding-top: 3px;
+}
+
+.body2-titulos {
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3px;
+}
+
+.body2-contenido {
+    width: 330px;
+    margin-left: 50px;
+    text-align: center;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body2-menu {
+    width: 300px;
+    color: rgb(70 126 173);
+    text-align: center;
+    margin-left: 10px;
+    list-style: square;
+    list-style-type: square;
+}
+
+#footer {
+    display: block;
+    justify-content: center;
+    background-color: #3171a7;
+
+}
+
+#footer-div {
+    display: flex;
+    height: 80px;
+    
+    justify-content: center;
+}
+
+#footer-div p {
+    height: 20px;
+    width: 220px;
+    color: #84b6e2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#copyright {
+    color: #84b6e2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    padding-bottom: 5px;
+}

@@ -38,9 +38,8 @@ p{
 
 #menu {
     min-height: 300px;
-    width: 22%;
+    width: 300px;
     background-color: hsl(189deg 54% 36%);
-    display: inline-block;
     vertical-align: top;
     border-radius: 10px;
 }
