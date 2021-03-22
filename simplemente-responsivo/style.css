@@ -1,0 +1,74 @@
+
+h2 {
+    height: 60px;
+    background: gray;
+    display: flex;
+    place-items: center;
+    padding-left: 10px;
+    margin-bottom: 4px;
+}
+
+.contenido {
+    height: 160px;
+    background: gray;
+    padding: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 30px;
+    background: yellow;
+    margin-top: 4px;
+    border: 1px solid gray;
+    content: "sdfg";
+}
+
+.text-desktop {
+    visibility: hidden;
+    position: absolute;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.text-tablet {
+    visibility: hidden;
+    position: absolute;
+    margin-left: 5px;
+    font-weight: bold;
+}
+.text-phone {
+    visibility: hidden;
+    position: absolute;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 480px) {
+    .text-phone {
+        visibility: visible;
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    .text-tablet {
+        visibility: visible;
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .text-desktop {
+        visibility: visible;
+        position: relative;
+    }
+
+    .text-tablet {
+        visibility: hidden;
+        position: absolute;
+    }
+}
