@@ -1,0 +1,302 @@
+* {
+    width: 820px;
+}
+
+body * {
+    outline: 1px dotted red;
+}
+
+.header-top {
+    width: 100%;
+    height: 65px;
+    display: flex;
+}
+
+#img-globe {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+
+.text-left {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+    width: 100%;
+}
+
+.text-left2 {
+    font-size: 12px;
+}
+
+.line {
+    border-top: 1px solid grey;
+    margin-top: 10px;
+    width: 185px;
+}
+
+.div-ninja {    
+    height: 280px;
+    width: 185px;
+    margin: 20px 0px 0px 0px;
+    background-image: url("images-2/ad_background.png");
+    text-align: center;
+    padding-top: 8px;
+}
+
+#img-ninja {
+    width: 80px;
+    height: 100px;
+}
+
+#btn-ninja {
+    width: 140px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(#78d1df, #3cc9df, #78d1df);
+}
+
+.text-ninja {
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+
+.the-inter {
+    width: max-content;
+    margin-left: 80px;
+    font-size: 35px;
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #474747;
+}
+
+.net {
+    width: max-content;
+    font-size: 35px;
+    margin-top: 25px;
+    color: cadetblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-title {
+    width: 800px;
+    height: 50px;
+    font-size: 25px;
+    color: white;
+    background: linear-gradient(#336699, #5082ab, #336699);
+    margin-bottom: 2px;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+}
+
+.red-color {
+    color: red;
+}
+
+.blue-color {
+    color: #336699;
+}
+
+.background-blue-color {
+    background-color: #336699;
+}
+
+.background-blue-color {
+    background-color: #336699;
+}
+
+.font-white-color {
+    color: white;
+}
+
+.background-orange-color {
+    background-color: #ed972d;
+}
+
+.btn-left {
+    width: 160px;
+    margin: 0px 0px 5px 10px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.body {
+    height: 540px;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(#e4e4e4, #ffffff, #ffffff);
+}
+
+.body-left{
+    width: 185px;
+
+}
+
+.body-right{
+    width: 100%;
+    margin-left: 30px;
+}
+
+p {
+    width: 100%;
+}
+
+span {
+    width: 100%;
+    width: max-content;
+}
+
+.text-line {
+    display: flex;
+}
+
+.text-width {
+    width: 100%;
+}
+
+.body-right-top {
+    width: 97%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+
+}
+
+.body-right-top-left {
+    width: 100px;
+    display: flex;
+}
+
+.body-right-top-right {
+    width: 180px;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    height: max-content;
+}
+
+.img-home {
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.text-dns {
+    width: max-content;
+    margin-top: 8px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    height: 20px;
+}
+
+.img-phone {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    margin-top: 5px;
+    align-self: center;
+}
+
+.div-date-phone {
+    width: 100%;
+}
+
+.text-date {
+    font-size: 10px;
+    width: max-content;
+    margin: 0px;
+}
+
+.phone-number {
+    font-size: 20px;
+    width: max-content;
+    margin: 0px;
+    color: #03c2de;
+    font-weight: bold;
+}
+
+.inter-phone {
+    font-size: 10px;
+    width: max-content;
+    margin: 0px;
+    
+}
+
+.titles {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #25669f;
+    font-weight: bold;
+    margin: 2px;
+    width: 100%;
+}
+
+.general-text {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+}
+
+.light-blue-text {
+    color: #25669f;
+}
+
+.black-color {
+    font-weight: bold;
+}
+
+.img-client-server {
+    width: 35%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+ul {
+    width: 560px;
+}
+
+.list-style-decimal {
+    list-style: decimal;
+}
+
+li {
+    width: 100%;
+}
+
+.item {
+    width: 100%;
+}
+
+.last-div {
+    width: 94%;
+    border-top: 4px solid #0085df;
+    border-right: 4px solid #0085df;
+    border-left: 4px solid #0085df;
+    height: 110px;
+    box-shadow: 20px black;
+    display: flex;
+    padding: 10px;
+}
+
+.img-html {
+    width: 15%;
+}
+
+.div-big-3 {
+    width: 80%;
+    margin: 5px 0 0 10px;
+}
