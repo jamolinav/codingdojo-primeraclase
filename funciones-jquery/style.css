@@ -1,0 +1,105 @@
+* {
+    width: 600px;
+}
+
+body * {
+    outline: 1px dotted red;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: repeat(1, 6fr);
+    background: gray;
+}
+
+.wrapper h3 {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-bottom: none;
+    margin: 0px;
+    padding: 5px 0px 5px;
+}
+
+header {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    border: 2px solid black;
+    border-top: none;
+}
+
+header button{
+    width: 100px;
+    margin-left: 20px;
+}
+
+#search {
+    width: 150px;
+    margin-right: 20px;
+}
+
+h1 {
+    width: max-content;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+p {
+    width: max-content;
+}
+
+.sections {
+    background: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.sections div{
+    text-align: -webkit-center;
+    
+}
+
+.sections-button {
+    width: 300px;
+    display: inline-grid;
+    align-content: center;
+}
+
+.sections div button {
+    width: 100px;
+    height: 25px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px #888888;
+}
+
+h6 {
+    margin: 0px;
+    display: flex;
+    justify-content: flex-end;
+    width: max-content;
+}
+
+h6 {
+    margin-top: 10px;
+    height: 100%;
+}
+
+footer {
+    border: 2px solid black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.color-red {
+    background-color: red;
+}
+
+img {
+    width: 50%;
+    display: none;
+}

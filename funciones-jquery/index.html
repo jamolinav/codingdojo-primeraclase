@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Funciones jQuery</title>
+    <script>
+        $(document).ready ( function() {
+            
+            $('#search').keypress ( function(e) {
+                // console.log(e.keyCode)
+                if (e.keyCode == 13) {
+                    alert($('#search').val());
+                    $('#url').val($('#search').val());
+                }
+            });
+
+            $('#btn-addclass').click( function() {
+                $('p').first().addClass('color-red');
+            });
+
+            $('#btn-fadeout').click( function() {
+                $('p').first().fadeOut( 2000, function() {
+                    $('p').first().hide();
+                });
+            });
+
+            $('#btn-fadein').click( function() {
+                $('p').first().fadeIn( 2000, function() {
+                    $('p').first().show();
+                });
+            });
+
+
+
+            $('#btn-toggle').click( function() {
+                $('img').toggle('slow', function() {
+                    $('img').show();
+                } );
+            });
+
+            $('#btn-slidetoggle').click( function() {
+                $('img').slideToggle('slow', function() {
+                    $('img').show();
+                } );
+            });
+
+            $('#btn-slidedown').click( function() {
+                $('img').slideDown('slow', function() {
+                    $('img').show();
+                } );
+            });
+
+            $('#btn-slideup').click( function() {
+                $('img').slideUp(1000, function() {
+                    console.log('slideup')
+                    $('img').show();
+                } );
+            });
+
+            $('img').click( function() {
+                $('img').slideToggle(1000, function() {
+                    $('img').hide();
+                } );
+            });
+            
+            $('#btn-append').click( function() {
+                $('div').last().append('<p>'+$('p').last().html()+'</p>');
+            });
+
+            $('#btn-after').click( function() {
+                $('#btn-after').after ( function () {
+                    return '<p>after<p>'
+                });
+            });
+
+            $('#btn-before').click( function() {
+                $('#btn-before').before( function() {
+                    return '<p>before<p>'
+                });
+            });
+
+
+        });
+    </script>
+</head>
+<body>
+    <section class="wrapper">
+        <h3>My jQuery basic assigment!</h3>
+        <header>
+            <button>&#8678;</button>
+            <button>&#8680;</button>
+            <button>&#x2716;</button>
+            <button>&#8679;</button>
+            <input id="url" type="text" placeholder="hppts://">
+            <input id="search" type="text" placeholder="&#8981; <Enter>">
+        </header>
+        <section class="sections">
+            <div class="sections-button">
+                <button id="btn-addclass">AddClass</button>
+                <button id="btn-fadeout">FadeOut</button>
+                <button id="btn-fadein">FadeIn</button>
+            </div>
+            <div>
+                <h1>AddClass</h1>
+                <p>Click the buttton to add class 'red' to this paragraph</p>
+            </div>
+        </section>
+        <section class="sections">
+            <div class="sections-button">
+                <button id="btn-toggle">Toggle</button>
+                <button id="btn-slidetoggle">Slidetoggle</button>
+                <button id="btn-slidedown">Slidedown</button>
+                <button id="btn-slideup">Slideup</button>
+            </div>
+            <div>
+                <h1>Slidetoggle</h1>
+                <p>Click the buttton to slidetoggle a hidden image</p>
+                <p>Click on image to hidden again</p>
+                <img src="logo.PNG" alt="" />
+            </div>
+        </section>
+        <section class="sections">
+            <div class="sections-button">
+                <button id="btn-append">Append</button>
+                <button id="btn-after">Hide After</button>
+                <button id="btn-before">Hide Before</button>
+            </div>
+            <div>
+                <h1>Append</h1>
+                <p>Click the buttton to append a new paragraph</p>
+            </div>
+        </section>
+        <footer>
+            <h6>Back</h6>
+        </footer>
+    </section>
+</body>
+</html>
