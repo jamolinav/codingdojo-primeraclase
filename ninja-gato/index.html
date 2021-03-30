@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <script>
+        
+        $(document).ready ( function() {
+            $('img').click ( function() {
+                // console.log($(this).attr('src'));
+                // console.log($(this).attr('data-alt-src'));
+                if ($(this).attr('src') === $(this).attr('data-alt-src')){
+                    $(this).attr('src', $(this).attr('src'));
+                } else {
+                    src = $(this).attr('src');
+                    $(this).attr('src', $(this).attr('data-alt-src'));
+                    $(this).attr('data-alt-src', src);
+                }
+            });
+        });
+
+    </script>
+    <title>Ninja To Cat</title>
+</head>
+<body>
+    <section class="whrapper" style="display: grid">
+        <img src='img/ninja0.png' data-alt-src='img/cat0.png' />
+        <img src='img/ninja1.png' data-alt-src='img/cat1.png' />
+        <img src='img/ninja2.png' data-alt-src='img/cat2.png' />
+        <img src='img/ninja3.png' data-alt-src='img/cat3.png' />
+        <img src='img/ninja4.png' data-alt-src='img/cat4.png' />
+    </section>
+</body>
+</html>
