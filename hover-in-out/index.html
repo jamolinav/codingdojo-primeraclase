@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <script>
+        
+        $(document).ready ( function() {
+            $('img').hover ( function() {
+                console.log($(this).attr('src'));
+                imagen = $(this).attr('src');
+                $(this).attr('src',$(this).attr('src-alt'));
+                $(this).attr('src-alt',imagen);
+            },
+            function() {
+                imagen = $(this).attr('src');
+                $(this).attr('src',$(this).attr('src-alt'));
+                $(this).attr('src-alt',imagen);
+            });
+        });
+
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Hover In/Out</title>
+</head>
+<body>
+    <header>Cursor en/fuera</header>
+    <section class="cuadro">
+        <img src-alt="mario.png" src="black_bg.jpg">
+        <img src-alt="codercat.jpg" src="black_bg.jpg">
+        <img src-alt="aidorucat.png" src="black_bg.jpg">
+        <img src-alt="chellocat.jpg" src="black_bg.jpg">
+    </section>
+</body>
+</html>
