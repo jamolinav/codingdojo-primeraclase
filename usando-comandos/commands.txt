@@ -1,0 +1,12 @@
+cd /Users/juanmolina/Desktop
+mkdir test
+touch test/index.html
+touch test/styles.css
+touch test/commands.txt
+cp test/index.html test/index_2.html
+mkdir destino
+mv test/index_2.html destino 
+rm test/styles.css 
+ls -l test/
+ls -l destino 
+rm -Rf destino 
